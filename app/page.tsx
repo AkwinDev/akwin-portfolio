@@ -14,6 +14,7 @@ import { FaJava } from "react-icons/fa6";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
+
 export default function Home() {
   const heroReveal = useScrollReveal({ once: true, threshold: 0.2 })
   const statsReveal = useScrollReveal({ once: true, threshold: 0.3 })
