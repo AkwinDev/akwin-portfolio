@@ -32,11 +32,10 @@ export default function About() {
 
   return (
     <div className="page-container">
-      <div 
+      <div
         ref={headerReveal.ref}
-        className={`text-center mb-16 ${
-          headerReveal.isVisible ? 'scroll-reveal active' : 'scroll-reveal'
-        }`}
+        className={`text-center mb-16 ${headerReveal.isVisible ? 'scroll-reveal active' : 'scroll-reveal'
+          }`}
       >
         <h1 className="section-title">About Me</h1>
         <p className="section-subtitle">
@@ -48,37 +47,42 @@ export default function About() {
         {/* Main Content */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
           {/* Bio */}
-          <div 
+          <div
             ref={contentReveal.ref}
-            className={`lg:col-span-2 space-y-6 ${
-              contentReveal.isVisible ? 'scroll-reveal-left active' : 'scroll-reveal-left'
-            }`}
+            className={`lg:col-span-2 space-y-6 ${contentReveal.isVisible ? 'scroll-reveal-left active' : 'scroll-reveal-left'
+              }`}
           >
             <div className="card p-8">
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
                 Hello! I'm Akwin
               </h2>
-              
+
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  I am a highly skilled and motivated <span className="font-bold text-slate-900">Software Development Engineer</span>specializing in full-stack development, with <span className="font-bold text-blue-600">1.7 years</span> of experience building modern, scalable web applications using React, Next.js, Node.js, and MongoDB.
+                  I am a highly skilled and motivated <span className="font-bold text-slate-900">Software Development Engineer</span> specializing in full-stack development, with <span className="font-bold text-blue-600">1.7 years</span> of experience building modern, scalable web applications using React, Next.js, Node.js, and MongoDB.
                 </p>
-                
+
                 <p>
-                 Passionate about crafting intuitive user interfaces and robust backend systems, I focus on writing 
-                 <span className="font-bold text-slate-900">clean, maintainable code</span> and adhering to best practices in software development. My expertise spans the full web stack, enabling me to design and implement end-to-end solutions that solve real-world problems and deliver exceptional user experiences.
+                  Passionate about crafting intuitive user interfaces and robust backend systems, I focus on writing
+                  <span className="font-bold text-slate-900">clean, maintainable code</span> and adhering to best practices in software development. My expertise spans the full web stack, enabling me to design and implement end-to-end solutions that solve real-world problems and deliver exceptional user experiences.
                 </p>
-                
+
                 <p>
-                 Outside of coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community. I’m always eager to learn, collaborate, and take on new challenges that push my technical and creative boundaries.
+                  Outside of coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community. I’m always eager to learn, collaborate, and take on new challenges that push my technical and creative boundaries.
                 </p>
               </div>
 
               <div className="mt-8 flex flex-wrap gap-4">
-                <button className="btn-primary">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1G2BJ8Cl55XX-2ludcJlo6rV6xxyVlrMi"
+                  className="btn-primary"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Download size={20} />
                   Download Resume
-                </button>
+                </a>
                 <a href="/contact" className="btn-secondary">
                   Let's Talk
                 </a>
@@ -90,7 +94,7 @@ export default function About() {
               <h3 className="text-2xl font-bold text-slate-900 mb-6">
                 What I Do Best
               </h3>
-              
+
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
                   {
@@ -118,7 +122,7 @@ export default function About() {
                     color: 'from-orange-50 to-orange-100 border-orange-200'
                   }
                 ].map((item, index) => (
-                  <div 
+                  <div
                     key={item.title}
                     className={`p-4 bg-gradient-to-br ${item.color} rounded-xl border magnetic`}
                   >
@@ -136,17 +140,16 @@ export default function About() {
           </div>
 
           {/* Sidebar */}
-          <div 
-            className={`space-y-6 ${
-              contentReveal.isVisible ? 'scroll-reveal-right active' : 'scroll-reveal-right'
-            }`}
+          <div
+            className={`space-y-6 ${contentReveal.isVisible ? 'scroll-reveal-right active' : 'scroll-reveal-right'
+              }`}
           >
             {/* Contact Info */}
             <div className="card p-6 sticky top-24">
               <h3 className="text-xl font-bold text-slate-900 mb-6">
                 Quick Facts
               </h3>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center flex-shrink-0">
@@ -163,7 +166,7 @@ export default function About() {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-100 to-green-50 flex items-center justify-center flex-shrink-0">
                     <Mail size={20} className="text-green-600" />
@@ -172,7 +175,7 @@ export default function About() {
                     <p className="text-sm font-bold text-slate-900 mb-1">
                       Email
                     </p>
-                    <a 
+                    <a
                       href="mailto:akwindevajunuse@gmail.com"
                       className="text-sm text-slate-600 hover:text-blue-600 transition-colors break-all"
                     >
@@ -180,7 +183,7 @@ export default function About() {
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start gap-3">
                   <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center flex-shrink-0">
                     <Phone size={20} className="text-purple-600" />
@@ -189,7 +192,7 @@ export default function About() {
                     <p className="text-sm font-bold text-slate-900 mb-1">
                       Phone
                     </p>
-                    <a 
+                    <a
                       href="tel:9566461726"
                       className="text-sm text-slate-600 hover:text-blue-600 transition-colors"
                     >
@@ -240,11 +243,10 @@ export default function About() {
         </div>
 
         {/* Timeline */}
-        <div 
+        <div
           ref={timelineReveal.ref}
-          className={`${
-            timelineReveal.isVisible ? 'scroll-reveal active' : 'scroll-reveal'
-          }`}
+          className={`${timelineReveal.isVisible ? 'scroll-reveal active' : 'scroll-reveal'
+            }`}
         >
           <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
             My Journey
@@ -257,11 +259,10 @@ export default function About() {
             {/* Timeline Items */}
             <div className="space-y-12">
               {timeline.map((item, index) => (
-                <div 
+                <div
                   key={index}
-                  className={`relative ${
-                    index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
-                  }`}
+                  className={`relative ${index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
+                    }`}
                 >
                   {/* Timeline Dot */}
                   <div className="hidden md:block absolute left-1/2 top-6 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10"></div>
@@ -291,18 +292,17 @@ export default function About() {
         </div>
 
         {/* Stats Section */}
-        <div 
+        <div
           ref={statsReveal.ref}
-          className={`mt-16 grid grid-cols-2 md:grid-cols-3 gap-6 ${
-            statsReveal.isVisible ? 'scroll-reveal active' : 'scroll-reveal'
-          }`}
+          className={`mt-16 grid grid-cols-2 md:grid-cols-3 gap-6 ${statsReveal.isVisible ? 'scroll-reveal active' : 'scroll-reveal'
+            }`}
         >
           {[
             { label: 'Years Experience', value: '1.7', icon: '📅' },
             { label: 'Projects Completed', value: '50+', icon: '✅' },
             { label: 'Technologies', value: '10+', icon: '🛠️' }
           ].map((stat, index) => (
-            <div 
+            <div
               key={stat.label}
               className="card p-6 text-center magnetic"
               style={{ animationDelay: `${index * 100}ms` }}

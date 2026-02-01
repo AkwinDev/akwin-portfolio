@@ -44,8 +44,8 @@ export default function Navigation() {
             {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <div className="transition-transform duration-300 hover:scale-105">
-                <h1 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-tight text-slate-900">
-                  AKWIN DEVA <span className="text-blue-600">JUNUSE G</span>
+                <h1 className="text-lg sm:text-xl text-blue-600 lg:text-2xl font-bold tracking-tight">
+                  AKWIN DEVA JUNUSE G
                 </h1>
                 <p className="text-[10px] sm:text-xs text-slate-600 tracking-widest uppercase hidden sm:block">
                   Software Development Engineer

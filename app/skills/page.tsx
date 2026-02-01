@@ -141,7 +141,7 @@ export default function Skills() {
               <div className="card p-8">
                 {/* Category Header */}
                 <div className="flex items-center gap-4 mb-8">
-                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${category.color} flex items-center justify-center text-white shadow-lg`}>
+                  <div className={`min-w-14 min-h-14 rounded-2xl bg-gradient-to-br ${category.color} flex items-center justify-center text-white shadow-lg`}>
                     {category.icon}
                   </div>
                   <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">

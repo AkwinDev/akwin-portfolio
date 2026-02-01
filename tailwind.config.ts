@@ -7,9 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Sora', 'ui-sans-serif', 'system-ui'],
-        mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+     fontFamily: {
+        // sans: ['ProximaNova', 'sans-serif'],
+        // mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

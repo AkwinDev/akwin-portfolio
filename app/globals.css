@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
 @layer base {
-  :root {
-    --font-sora: 'Sora', sans-serif;
-    --font-jetbrains: 'JetBrains Mono', monospace;
-  }
   
   html {
     scroll-behavior: smooth;
@@ -96,6 +92,52 @@
     transform: scale(1);
   }
 }
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url('/public/fonts/proximaNova/ProximaNovaExtrabold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'ProximaNova-SemiBold';
+  src: url('/public/fonts/proximaNova//ProximaNovaSemibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('/public/fonts/proximaNova/ProximaNovaRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('/public/fonts/proximaNova/ProximaNovaLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.bold {
+    font-family: 'ProximaNova-Bold', sans-serif;
+  }
+  .semiBold {
+    font-family: 'ProximaNova-SemiBold', sans-serif;
+  }
+  .regular {
+    font-family: 'ProximaNova-Regular', sans-serif;
+  }
+  .light {
+    font-family: 'ProximaNova-Light', sans-serif;
+  }
 
 ::-webkit-scrollbar {
   width: 12px;

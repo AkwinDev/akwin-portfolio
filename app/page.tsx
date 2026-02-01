@@ -136,16 +136,16 @@ export default function Home() {
 
             {/* Hero Visual */}
             <div className="relative">
-              <div className="card p-8 lg:p-12 max-w-md mx-auto animate-float">
+              <div className="card p-4 lg:p-12 max-w-md mx-auto animate-float">
                 {/* Profile Avatar */}
                 <div className="flex justify-center mb-8">
                   <div className="relative">
-                    <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full bg-gradient-to-br from-blue-600 via-purple-500 to-pink-500 flex items-center justify-center text-white text-5xl sm:text-6xl font-bold shadow-2xl shadow-blue-500/30 animate-pulse">
-                      AD
+                    <div className="">
+                      <img src={"/assets/images/img2.jpg"} 
+                      className='w-40 h-40 sm:w-48 sm:h-48 rounded-full 
+                       object-[58%_50%] flex items-center justify-center text-white text-5xl sm:text-6xl font-bold shadow-2xl shadow-blue-500/30 object-cover'></img>
                     </div>
-                    <div className="absolute -bottom-2 -right-2 w-20 h-20 bg-green-500 rounded-full border-4 border-white flex items-center justify-center shadow-lg">
-                      <span className="text-3xl">✓</span>
-                    </div>
+                    
                   </div>
                 </div>
 
