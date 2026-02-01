@@ -86,9 +86,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Parallax */}
       <section className="min-h-[calc(100vh-5rem)] flex items-center relative overflow-hidden">
-        {/* Animated background elements */}
         <div 
           className="absolute inset-0 opacity-10"
           style={{ transform: `translateY(${parallaxOffset}px)` }}
@@ -99,7 +97,6 @@ export default function Home() {
 
         <div className="page-container relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Hero Text */}
             <div 
               ref={heroReveal.ref}
               className={`text-center lg:text-left ${
@@ -134,10 +131,8 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Hero Visual */}
             <div className="relative">
               <div className="card p-4 lg:p-12 max-w-md mx-auto animate-float">
-                {/* Profile Avatar */}
                 <div className="flex justify-center mb-8">
                   <div className="relative">
                     <div className="">
@@ -149,7 +144,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Stats */}
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-2xl border border-blue-200 text-center magnetic">
                     <div className="text-4xl font-bold text-blue-600 font-mono mb-1">
@@ -175,7 +169,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Tech Stack with Scroll Reveal */}
       <section 
         ref={statsReveal.ref}
         className={`page-container ${
@@ -216,7 +209,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
       <section 
         ref={servicesReveal.ref}
         className={`page-container bg-gradient-to-br from-slate-50 to-white ${
@@ -257,7 +249,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Slider */}
       {/* <section 
         ref={testimonialsReveal.ref}
         className={`page-container ${
@@ -335,7 +326,6 @@ export default function Home() {
         </div>
       </section> */}
 
-      {/* CTA Section */}
       <section className="page-container">
         <div className="card p-8 sm:p-12 lg:p-16 max-w-4xl mx-auto text-center bg-gradient-to-br from-blue-600 to-purple-600">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">

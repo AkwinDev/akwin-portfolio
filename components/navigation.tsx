@@ -41,7 +41,6 @@ export default function Navigation() {
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
-            {/* Logo */}
             <Link href="/" className="flex-shrink-0">
               <div className="transition-transform duration-300 hover:scale-105">
                 <h1 className="text-lg sm:text-xl text-blue-600 lg:text-2xl font-bold tracking-tight">
@@ -53,7 +52,6 @@ export default function Navigation() {
               </div>
             </Link>
 
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-6 lg:gap-8">
               {navItems.map((item) => (
                 <Link
@@ -73,7 +71,6 @@ export default function Navigation() {
               ))}
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden p-2 text-slate-900 hover:text-blue-600 transition-colors"
@@ -85,7 +82,6 @@ export default function Navigation() {
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
         <>
           <div 

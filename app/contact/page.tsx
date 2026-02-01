@@ -100,7 +100,6 @@ const serviceID = 'Akwin@12#21'
       </div>
 
       <div className="max-w-6xl mx-auto">
-        {/* Contact Methods Grid */}
         <div 
           ref={infoReveal.ref}
           className={`grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 ${
@@ -132,7 +131,6 @@ const serviceID = 'Akwin@12#21'
         </div>
 
         <div className="grid lg:grid-cols-5 gap-8">
-          {/* Contact Information */}
           <div 
             className={`lg:col-span-2 space-y-6 ${
               infoReveal.isVisible ? 'scroll-reveal-left active' : 'scroll-reveal-left'
@@ -179,7 +177,6 @@ const serviceID = 'Akwin@12#21'
               </div>
             </div>
 
-            {/* Quick Stats */}
             <div className="card p-6 bg-gradient-to-br from-blue-50 to-purple-50">
               <h3 className="text-lg font-bold text-slate-900 mb-4">
                 Why Work With Me?
@@ -221,7 +218,6 @@ const serviceID = 'Akwin@12#21'
             </div>
           </div>
 
-          {/* Contact Form */}
           <div 
             ref={formReveal.ref}
             className={`lg:col-span-3 ${
@@ -300,7 +296,6 @@ const serviceID = 'Akwin@12#21'
                   />
                 </div>
 
-                {/* Status Messages */}
                 {status === 'success' && (
                   <div className="p-4 bg-green-50 border-2 border-green-200 rounded-xl text-green-800 text-sm animate-scale-in flex items-center gap-3">
                     <div className="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center text-white flex-shrink-0">
@@ -338,7 +333,6 @@ const serviceID = 'Akwin@12#21'
           </div>
         </div>
 
-        {/* FAQ Section */}
         {/* <div className="mt-16 card p-8">
           <h2 className="text-2xl font-bold text-slate-900 mb-6 text-center">
             Frequently Asked Questions

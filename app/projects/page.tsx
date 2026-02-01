@@ -95,7 +95,6 @@ export default function Projects() {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        {/* Featured Projects with Slider */}
         <div 
           ref={featuredReveal.ref}
           className={`mb-20 ${
@@ -112,7 +111,6 @@ export default function Projects() {
               className={`card overflow-hidden mb-12 ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}
             >
               <div className="grid gap-8">
-                {/* Project Images Slider */}
                 {/* <div className="relative h-64 md:h-auto bg-slate-100 rounded-xl overflow-hidden">
                   <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
@@ -138,7 +136,6 @@ export default function Projects() {
                   </Swiper>
                 </div> */}
 
-                {/* Project Details */}
                 <div className="p-6 flex flex-col justify-center">
                   <div className={`inline-block w-fit px-4 py-2 rounded-lg text-sm font-bold mb-4 bg-gradient-to-r ${colorClasses[project.color]} text-white`}>
                     {project.subtitle}
@@ -179,7 +176,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Other Projects Grid */}
         {regularProjects?.length?<div 
           ref={gridReveal.ref}
           className={`${
@@ -197,7 +193,6 @@ export default function Projects() {
                 className="card card-hover overflow-hidden group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                {/* Project Image */}
                 <div className="relative h-56 overflow-hidden bg-slate-100">
                   {/* <Image
                     src={project.images[0]}
@@ -217,7 +212,6 @@ export default function Projects() {
                   </div>
                 </div>
 
-                {/* Project Content */}
                 <div className="p-6">
                   <div className={`inline-block px-3 py-1.5 rounded-lg text-xs font-bold mb-3 bg-gradient-to-r ${colorClasses[project.color]} text-white`}>
                     {project.subtitle}
@@ -252,7 +246,6 @@ export default function Projects() {
           </div>
         </div>:null}
 
-        {/* CTA Section */}
         <div className="mt-16 text-center">
           <div className="card p-8 sm:p-12 max-w-2xl mx-auto bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
             <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-4">

@@ -125,7 +125,6 @@ export default function Skills() {
       </div>
 
       <div className="max-w-6xl mx-auto">
-        {/* Skills Categories */}
         <div 
           ref={skillsReveal.ref}
           className="space-y-12"
@@ -139,7 +138,6 @@ export default function Skills() {
               style={{ animationDelay: `${catIndex * 150}ms` }}
             >
               <div className="card p-8">
-                {/* Category Header */}
                 <div className="flex items-center gap-4 mb-8">
                   <div className={`min-w-14 min-h-14 rounded-2xl bg-gradient-to-br ${category.color} flex items-center justify-center text-white shadow-lg`}>
                     {category.icon}
@@ -149,7 +147,6 @@ export default function Skills() {
                   </h2>
                 </div>
 
-                {/* Skills Grid */}
                 <div className="grid sm:grid-cols-2 gap-6">
                   {category.skills.map((skill:any, skillIndex) => (
                     <SkillBar 
@@ -165,7 +162,6 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Additional Info Cards */}
         <div 
           ref={additionalReveal.ref}
           className={`mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 ${
@@ -220,7 +216,6 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Soft Skills */}
         <div className="mt-16">
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-8">
             Soft Skills & Qualities

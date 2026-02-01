@@ -44,9 +44,7 @@ export default function About() {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        {/* Main Content */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          {/* Bio */}
           <div
             ref={contentReveal.ref}
             className={`lg:col-span-2 space-y-6 ${contentReveal.isVisible ? 'scroll-reveal-left active' : 'scroll-reveal-left'
@@ -89,7 +87,6 @@ export default function About() {
               </div>
             </div>
 
-            {/* What I Do */}
             <div className="card p-8">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">
                 What I Do Best
@@ -139,12 +136,10 @@ export default function About() {
             </div>
           </div>
 
-          {/* Sidebar */}
           <div
             className={`space-y-6 ${contentReveal.isVisible ? 'scroll-reveal-right active' : 'scroll-reveal-right'
               }`}
           >
-            {/* Contact Info */}
             <div className="card p-6 sticky top-24">
               <h3 className="text-xl font-bold text-slate-900 mb-6">
                 Quick Facts
@@ -242,7 +237,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Timeline */}
         <div
           ref={timelineReveal.ref}
           className={`${timelineReveal.isVisible ? 'scroll-reveal active' : 'scroll-reveal'
@@ -253,10 +247,8 @@ export default function About() {
           </h2>
 
           <div className="relative">
-            {/* Timeline Line */}
             <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-blue-200 via-purple-200 to-pink-200"></div>
 
-            {/* Timeline Items */}
             <div className="space-y-12">
               {timeline.map((item, index) => (
                 <div
@@ -264,10 +256,8 @@ export default function About() {
                   className={`relative ${index % 2 === 0 ? 'md:pr-1/2 md:text-right' : 'md:pl-1/2 md:ml-auto'
                     }`}
                 >
-                  {/* Timeline Dot */}
                   <div className="hidden md:block absolute left-1/2 top-6 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10"></div>
 
-                  {/* Content Card */}
                   <div className="card p-6 magnetic">
                     <div className="flex items-center gap-3 mb-3">
                       <span className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-bold">
@@ -291,7 +281,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Stats Section */}
         <div
           ref={statsReveal.ref}
           className={`mt-16 grid grid-cols-2 md:grid-cols-3 gap-6 ${statsReveal.isVisible ? 'scroll-reveal active' : 'scroll-reveal'
