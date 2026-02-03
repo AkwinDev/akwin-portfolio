@@ -79,8 +79,8 @@ const serviceID = 'Akwin@12#21'
     {
       icon: <Linkedin size={24} />,
       title: "LinkedIn",
-      value: "/in/akwin-deva-junuse-g",
-      href: "https://linkedin.com/in/akwin-deva-junuse-g",
+      value: "linkedin.com/in/akwin-deva-junuse",
+      href: "https://linkedin.com/in/akwin-deva-junuse",
       color: "from-blue-600 to-blue-700"
     }
   ]
@@ -241,7 +241,7 @@ const serviceID = 'Akwin@12#21'
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      placeholder="John Doe"
+                      placeholder="Name"
                       className="input-field"
                       disabled={status === 'sending'}
                     />
@@ -257,7 +257,7 @@ const serviceID = 'Akwin@12#21'
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      placeholder="john@example.com"
+                      placeholder="Email"
                       className="input-field"
                       disabled={status === 'sending'}
                     />
