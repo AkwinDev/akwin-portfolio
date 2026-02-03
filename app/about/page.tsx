@@ -26,7 +26,7 @@ export default function About() {
       year: "2020 - 2024",
       title: "Student",
       company: "Coimbatore Institute Of Engineering And Technology",
-      description: "Student"
+      description: "Pursued a Bachelor’s degree in Computer Science and Engineering, where I developed a strong foundation in software development and algorithms."
     },
   ]
 
