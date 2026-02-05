@@ -39,8 +39,8 @@ export default function Navigation() {
             : 'bg-white/80 backdrop-blur-md'
         }`}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-screen">
+          <div className="flex items-center justify-between h-16 sm:h-20 ">
             <Link href="/" className="flex-shrink-0">
               <div className="transition-transform duration-300 hover:scale-105">
                 <h1 className="text-lg sm:text-xl text-blue-600 lg:text-2xl font-bold tracking-tight">
