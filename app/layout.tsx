@@ -9,6 +9,9 @@ export const metadata = {
   description: 'Full-stack developer specializing in React, Next.js, Java, and MongoDB. Building modern, scalable web applications.',
   keywords: ['Akwin Deva Junuse','Akwin','Software Developer', 'Full Stack', 'React', 'Next.js', 'Java', 'MongoDB' ,'Chennai','Bengaluru','Looking for oppertunities'],
   authors: [{ name: 'Akwin Deva Junuse G' }],
+  verification: {
+    google: "bae57913c1cb75f6",
+  },
   openGraph: {
     title: 'Akwin Deva Junuse G - Software Development Engineer',
     description: 'Full-stack developer specializing in React, Next.js, Java, and MongoDB. Building modern, scalable web applications.',
